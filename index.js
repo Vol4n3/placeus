@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // include routes
-var routes = require('routes.js');
+var routes = require('./routes.js');
 app.use('/', routes);
 
 // catch 404 and forward to error handler
@@ -37,5 +37,5 @@ app.use(function(req, res, next) {
 
 // listen on port 8080
 app.listen(8080, function() {
-    console.log('Express app listening on port 3000');
+    console.log('Api us is launched on port 8080');
 });

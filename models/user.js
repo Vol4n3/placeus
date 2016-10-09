@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 //Config
-var dbName = "User"
-
+var dbName = "user"
+var crypto = require('crypto');
 var schema = new mongoose.Schema({
     email: {
         type: String,
