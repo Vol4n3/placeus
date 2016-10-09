@@ -1,7 +1,15 @@
 var mongoose = require('mongoose');
 //Config
-var dbName = "user"
-var crypto = require('crypto');
+const dbName = "user"
+const crypto = require('crypto');
+
+
+function crypt(data) {
+    return crypto.createHmac('sha256', data)
+        .update('I love cupcakes')
+        .digest('hex')
+}
+
 var schema = new mongoose.Schema({
     email: {
         type: String,
