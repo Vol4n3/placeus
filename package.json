@@ -1,0 +1,22 @@
+{
+  "name": "apiusplace",
+  "version": "1.0.0",
+  "description": "api for website us",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vol4n3/placeus.git"
+  },
+  "author": "Vol4n3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vol4n3/placeus/issues"
+  },
+  "homepage": "https://github.com/Vol4n3/placeus#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
