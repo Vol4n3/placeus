@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var app = express();
@@ -29,9 +30,10 @@ app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    var err = new Error('File Not Found');
-    err.status = 404;
-    next(err);
+    res.status(404);
+    res.json({
+        error: "request not found"
+    })
 });
 
 
