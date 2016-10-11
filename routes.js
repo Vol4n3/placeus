@@ -11,9 +11,9 @@ router.post('/register', function(req, res, next) {
 });
 
 function basicRoutes(name, model) {
-    router.post(name + 's', function(req, res, next) {
+    router.get(name + 's', function(req, res, next) {
 
-    })
+    });
 
 }
 
